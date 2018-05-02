@@ -119,7 +119,7 @@ var styling = {
     $('#status_longitude').text(p[p.length-1].longitude +'\u00B0');
     $('#status_valid').text(format.bool(p[p.length-1].valid));
     $('#status_accuracy').text(format.distance(p[p.length-1].accuracy));
-    $('#status_altitude').text(p[p.length-1].altitude);
+    $('#status_altitude').text(p[p.length-1].altitude + " Meter");
     $('#status_speed').text(format.speed(p[p.length-1].speed));
     $('#status_course').text(format.course(p[p.length-1].course));
     $('#status_address').text(p[p.length-1].address);
@@ -150,28 +150,3 @@ var styling = {
   }
 
 }
-
-// function resize_berichte_table() {
-//
-//   var anpassung = 0;
-//   if (navigator.userAgent.indexOf("Firefox") != -1) {
-//     anpassung = 1;
-//   }
-//
-//   var $table = $('table.scroll'),
-//       $bodyCells = $table.find('tbody tr:first').children(),
-//       colWidth;
-//
-//   // Adjust the width of thead cells when window resizes
-//   $(window).resize(function() {
-//       // Get the tbody columns width array
-//       colWidth = $bodyCells.map(function() {
-//           return $(this).width();
-//       }).get();
-//
-//       // Set the width of thead columns
-//       $table.find('thead tr').children().each(function(i, v) {
-//           $(v).width(colWidth[i] - anpassung);
-//       });
-//   }).resize(); // Trigger resize handler
-// }
