@@ -12,20 +12,20 @@ input {
 
 #container_parameters_and_user_data {
   margin-bottom: -0.1em;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 #container_parameters {
   display: inline-block;
   width: 75%;
-  /* width: 63vw; */
-  border: 2px solid #707884;
-  /* margin-bottom: 0.2em; */
+  margin: 0px;
+  padding:0px;
 }
 
 #parameters_container {
   display: inline-block;
-  padding-top: 0.30em;
-  padding-bottom: 0.10em;
+  padding: 10px;
   width: 100%;
   text-align: center;
 }
@@ -34,7 +34,7 @@ input {
   display: inline-block;
   width: 130px;
   height: 30px;
-  font-size: 12px;
+  font-size: 14px;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -43,32 +43,26 @@ input {
   display: inline-block;
   width: 130px;
   height: 30px;
-  font-size: 12px;
+  font-size: 14px;
   /* margin-top: -21px; */
 }
 
 #parameters_select_default_time_frames {
   display: inline-block;
-  width: 120px;
+  width: 150px;
   height: 30px;
-  font-size: 12px;
+  font-size: 14px;
   padding-top: 0;
   padding-bottom: 0;
 }
 
 #container_user_data {
-  display: inline-block;
-  vertical-align: top;    /*ganz oben platzieren*/
-  width: 24.92%;
-  min-width: 10vw;
-  border: 2px solid #707884;
-  margin-left: -0.2em;
-  height: 64px;
+  margin: 0px;
+  padding: 0px;
 }
 
-#user_data_container {
-  padding-top: 0.35em;
-  padding-bottom: 0.10em;
+#user_data_container{
+  padding: 10px;
 }
 
 #user_logged_in_information {
@@ -82,7 +76,7 @@ input {
   margin-right: 0.3em;
 
   height: 30px;
-  font-size: 12px;
+  font-size: 14px;
   /* color: black;
   background-color: #d2d6dd;
   border-color: #9da3ad; */
@@ -96,7 +90,7 @@ input {
 } */
 
 #user_logged_in_information {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 #container_device_and_status {
@@ -338,7 +332,7 @@ th, td {
 
 #bericht_konfigurieren_anzeigen-button {
   height: 30px;
-  font-size: 12px;
+  font-size: 14px;
   /* color: black;
   background-color: #d2d6dd;
   border-color: #9da3ad; */
