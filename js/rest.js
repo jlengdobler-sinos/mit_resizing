@@ -4,7 +4,7 @@ var rest = {
     $.ajax({
       type: 'GET',
       url: 'http://demo5.traccar.org/api/groups',
-      async: false,   //TODO deprecated
+      async: true,   //TODO deprecated
       headers: {
           // "Authorization": "Basic " + btoa("skipto@t-online.de:test")
           "Authorization": "Basic " + btoa( sessionStorage.getItem("Username")+":"+sessionStorage.getItem("Password") )
@@ -24,7 +24,7 @@ var rest = {
     $.ajax({
       type: 'GET',
       url: 'http://demo5.traccar.org/api/devices'+url_parameters,
-      async: false,   //TODO deprecated
+      async: true,   //TODO deprecated
       headers: {
           // "Authorization": "Basic " + btoa("skipto@t-online.de:test")
           "Authorization": "Basic " + btoa( sessionStorage.getItem("Username")+":"+sessionStorage.getItem("Password") )
@@ -43,7 +43,7 @@ var rest = {
     $.ajax({
       type: 'GET',
       url: 'http://demo5.traccar.org/api/positions?deviceId='+deviceId+'&from='+start_date+'&to='+end_date+url_parameters,
-      async: false,
+      async: true,
       // positions?deviceId=12&from=2016-08-08T15:22:22.000Z&to=2016-08-08T15:52:22.000Z
       dataType: 'json', //muss angegeben werden, sonst erfolgt Rückgabe in CSV-Format
       headers: {
@@ -61,7 +61,7 @@ var rest = {
     $.ajax({
       type: 'GET',
       url: 'http://demo5.traccar.org/api/geofences',
-      async: false,   //TODO deprecated
+      async: true,   //TODO deprecated
       headers: {
           // "Authorization": "Basic " + btoa("skipto@t-online.de:test")
           "Authorization": "Basic " + btoa( sessionStorage.getItem("Username")+":"+sessionStorage.getItem("Password") )

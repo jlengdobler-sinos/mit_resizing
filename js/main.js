@@ -1,13 +1,9 @@
 var map = "";
 var last_index_position_array = "";
 
-console.log(sessionStorage);
+// console.log(sessionStorage);
 
 $( document ).ready(function() {
-
-  // $(window).resize(function() {
-  //   styling.resize_berichte_table();
-  // }).resize(); // Trigger resize handler
 
   var anpassung = 0;
   if (navigator.userAgent.indexOf("Firefox") != -1) {
@@ -27,10 +23,6 @@ $( document ).ready(function() {
       colWidth = $bodyCells.map(function() {
           return $(this).width();
       }).get();
-
-      // console.log($table);
-      // console.log($bodyCells);
-      // console.log(colWidth);
 
       // Set the width of thead columns
       $table.find('thead tr').children().each(function(i, v) {
@@ -123,22 +115,13 @@ $( document ).ready(function() {
       });
   }).resize(); // Trigger resize handler
 
-
   styling.add_group_parameter_options();
   styling.add_device_parameter_options();
-
 
   $('#form_group_value').val(''+ $('#parameters_select_groups').children("option").filter(":selected").val() );
   $('#form_device_value').val(''+ $('#parameters_select_devices').children("option").filter(":selected").val() );
 
-
-
   map = map_obj.create_ol_map();
-
-  // window.onresize = function(){
-  //   setTimeout( function() { map.updateSize();}, 200);
-  // }
-
 
   $("#parameters_select_groups").change(function() {
     $('#form_group_value').val(''+ $('#parameters_select_groups').children("option").filter(":selected").val() );
@@ -316,6 +299,8 @@ $( document ).ready(function() {
       // $('#bericht_table tbody').append('<tr id="'+p[i].id+'" class="bericht_table_rows"><td>'+devices[0].name+'</td><td>'+formatBool(p[i].valid)+'</td><td>'+date.iso8601_to_germanDate(p[i].fixTime)+'</td><td>'+p[i].latitude+'\u00B0</td><td>'+p[i].longitude+'\u00B0</td><td>'+p[i].altitude+' m</td> <td>'+p[i].course+'</td> <td>'+formatSpeed(p[i].speed)+'</td><td>'+p[i].address+'</td></tr>');
       $('#bericht_table tbody').append('<tr id="'+p[i].id+'" class="bericht_table_rows"><td>'+devices[0].name+'</td><td>'+format.bool(p[i].valid)+'</td><td>'+date.iso8601_to_germanDate(p[i].fixTime)+'</td><td>'+p[i].latitude+'\u00B0</td><td>'+p[i].longitude+'\u00B0</td><td>'+p[i].altitude+' m</td> <td>'+p[i].course+'</td> <td>'+format.speed(p[i].speed)+'</td><td>'+p[i].address+'</td></tr>');
     }
+
+    console.log(points);
 
     //anzeigen von Berichts-Tabelle, nachdem Bericht erstellt wurde
     $('#bericht_table_header_fake').css("display", "table");

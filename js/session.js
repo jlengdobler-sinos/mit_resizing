@@ -9,7 +9,7 @@ $( document ).ready(function() {
     // if( $("#login_username").val() == "skipto@t-online.de" && $('#login_password').val() == "test" ) { //testweise nur eigenen Benutzer zulassen
       sessionStorage.setItem("Username", $("#login_username").val() );
       sessionStorage.setItem("Password", $("#login_password").val() );
-      console.log(sessionStorage);
+      // console.log(sessionStorage);
       window.location.replace("main.html");    //Redirect zu Haupt-Seite
     // }else{
     //   alert("Ungültige Anmeldedaten!");
