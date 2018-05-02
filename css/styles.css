@@ -1,0 +1,394 @@
+body {
+  background: radial-gradient(circle, #97BE0D, white);
+}
+
+h6 {
+  font-weight: bold;
+}
+
+input {
+  text-align: center;
+}
+
+#container_parameters_and_user_data {
+  margin-bottom: -0.1em;
+}
+
+#container_parameters {
+  display: inline-block;
+  width: 75%;
+  /* width: 63vw; */
+  border: 2px solid #707884;
+  /* margin-bottom: 0.2em; */
+}
+
+#parameters_container {
+  display: inline-block;
+  padding-top: 0.30em;
+  padding-bottom: 0.10em;
+  width: 100%;
+  text-align: center;
+}
+
+#parameters_select_groups, #parameters_select_devices {
+  display: inline-block;
+  width: 130px;
+  height: 30px;
+  font-size: 12px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#parameters_select_start_date, #parameters_select_end_date {
+  display: inline-block;
+  width: 130px;
+  height: 30px;
+  font-size: 12px;
+  /* margin-top: -21px; */
+}
+
+#parameters_select_default_time_frames {
+  display: inline-block;
+  width: 120px;
+  height: 30px;
+  font-size: 12px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#container_user_data {
+  display: inline-block;
+  vertical-align: top;    /*ganz oben platzieren*/
+  width: 24.92%;
+  min-width: 10vw;
+  border: 2px solid #707884;
+  margin-left: -0.2em;
+  height: 64px;
+}
+
+#user_data_container {
+  padding-top: 0.35em;
+  padding-bottom: 0.10em;
+}
+
+#user_logged_in_information {
+  display: inline-block;
+  margin-left: 0.3em;
+  margin-top: 0.3em;
+}
+
+#logout_button {
+  float: right;
+  margin-right: 0.3em;
+
+  height: 30px;
+  font-size: 12px;
+  /* color: black;
+  background-color: #d2d6dd;
+  border-color: #9da3ad; */
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* #logout_button:hover {
+  color: white;
+  background-color: #9da3ad;
+} */
+
+#user_logged_in_information {
+  font-size: 12px;
+}
+
+#container_device_and_status {
+  display: inline-block;
+  vertical-align: top;    /*ganz oben platzieren*/
+  min-height: 37.54em;
+  border: 2px solid #707884;
+}
+
+#devices, #status {
+    width: 22em;
+    /* width: 28em; */
+    margin-bottom: -0.90em; /*Lücke zwischen inline-block Elementen schließen*/
+}
+
+/* #devices {
+  height: 14em;
+} */
+
+#status {
+  /* height: 23.75em; */
+  height: 37.85em;
+}
+
+/* #devices_table tbody {
+  max-height: 15em;
+} */
+
+#status_table tbody {
+  /* max-height: 22em; */
+  max-height: 34em;
+}
+
+/* #devices_table .device_name {
+  min-width: 150px;
+  max-width: 150px;
+}
+
+#devices_table .device_status {
+  min-width: 150px;
+  max-width: 150px;
+}
+
+#devices_table .device_last_update {
+  min-width: 160px;
+  max-width: 160px;
+} */
+
+#status_table .status_parameter {
+  min-width: 140px;
+  max-width: 140px;
+  /* min-width: 50%;
+  max-width: 50%; */
+}
+
+#status_table .status_wert {
+  min-width: 180px;
+  max-width: 180px;
+  /* min-width: 50%;
+  max-width: 50%; */
+}
+
+#option_folgen {
+  /* display: none; */
+  float: right;
+  font-size: 8px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#status_header h6 {
+  /* margin-top: 5px; */
+  display: inline-block;
+}
+
+/* #status_header {
+  color: white;
+  background-color: #707884;
+  padding-left: 0.4em;
+  height: 2em;
+} */
+
+#devices_header, #status_header, #map_header, #berichte_header, #ereignis_header, #popup_konfigurieren_header, #parameters_header, #user_data_header {
+  color: white;
+  background-color: #707884;
+  padding-left: 0.4em;
+  height: 1.3em;
+}
+
+#map_header {
+  width: 101.2%;
+}
+
+#devices_table tr:not(:first-child):hover, #bericht_table tbody tr:hover {
+  background-color: #9caabf;
+}
+
+/* #devices_table_container {
+  height: 85%;
+  overflow:hidden;
+  overflow-y: scroll;
+} */
+
+#status_table_container {
+  width: 100%;
+  height: 95%;
+  overflow:hidden;
+  /* overflow-y: scroll; */
+}
+
+#status_table {
+  height: 22.5em;
+}
+
+#devices_table th, #devices_table td/*, #status_table th, #status_table td*/, #bericht_table_header_fake th, #bericht_table th, #bericht_table td {
+  padding: 0px; /*Zeilenhöhe verkleinern, dass mehr Zeilen sichtbar sind, ohne zuviel scrollen zu müssen*/
+}
+
+#status_table th, #status_table td {
+  padding: 7px;
+}
+
+th, td {
+  overflow: hidden;
+  text-align:center;
+  white-space: nowrap;  /*Zeilenumbruch in Table-Zellen verhindern*/
+}
+/*https://codepen.io/yavuzselim/pen/LNYrBd*/
+
+#devices_table tbody, #status_table tbody{
+    overflow-x:auto;
+    overflow-y:auto;
+    width: 100%;
+}
+#devices_table thead, #devices_table tbody {
+  display:block;
+}
+
+#status_table thead, #status_table tbody {
+  display: none;
+}
+/******************************************/
+#map {
+  display: inline-block;
+  /* width: 88.6em; */
+  width: 96.5em;
+  /* width: calc(80vw - 100px); */
+  /* width: 60vw; */
+  height: 37.5em;
+  margin-left: -0.22em;
+}
+
+#map_container {
+  width: 101.2%;  /*über 100%, weil scroll-Bar von bericht_table da Probleme macht*/
+  height: 96.6%;
+  border: 2px solid #707884;
+}
+
+.last_position {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 40px solid red;
+  opacity: 0.5;
+}
+
+.positions_overlay {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #005FFF;
+}
+
+.position_course {
+
+  /* border: solid white;
+  border-width: 0 1.5px 1.5px 0;
+  display: inline-block;
+  padding: 2.5px;
+
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+
+  margin-top: 37%;
+  margin-left: 23%; */
+
+  background-image: url("../img/arrow_paint1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* #ereignis {
+  display: inline-block;
+  vertical-align: top;
+  width: 15.57%;
+  border: 2px solid #707884;
+  min-height: 37.55em;
+  margin-left: -0.2em;
+} */
+
+/*http://jsfiddle.net/CrSpu/16621/*/
+
+#berichte {
+  margin-top: -0.19em;
+}
+
+#bericht_table_container {
+  overflow:hidden;
+  overflow-y: scroll;
+  height: 12.9em;
+}
+
+#bericht_table {
+  display: none;
+}
+
+#bericht_table_header_fake {
+  display: none;
+  table-layout: fixed;
+  width: 99%;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+#bericht_table td {
+  width: 210px;
+}
+
+/**/
+
+#bericht_menu {
+
+}
+
+#bericht_konfigurieren_anzeigen-button {
+  height: 30px;
+  font-size: 12px;
+  /* color: black;
+  background-color: #d2d6dd;
+  border-color: #9da3ad; */
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* #bericht_konfigurieren_anzeigen-button:hover {
+  background-color: #9da3ad;
+  color: white;
+} */
+
+#form_data {
+  display: none;
+}
+
+.last_position_label {
+  margin-top: -40px;
+  margin-left: -15px;
+
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.option_follow_active {
+  background-color: #9b9ea3;
+  border-color: #9b9ea3;
+  color: white;
+}
+
+/*Tooltip*/
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.positions_overlay:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}

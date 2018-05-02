@@ -1,0 +1,249 @@
+h6 {
+  font-weight: bold;
+}
+
+input {
+  text-align: center;
+}
+
+#container_parameters_and_user_data {
+  margin-bottom: -0.1em;
+}
+
+#container_parameters {
+  display: inline-block;
+  width: 64%;
+  border: 2px solid #707884;
+  margin-bottom: 0.2em;
+}
+
+#parameters_container {
+  display: inline-block;
+  padding-top: 0.35em;
+  padding-bottom: 0.10em;
+  width: 100%;
+  text-align: center;
+}
+
+#parameters_select_groups, #parameters_select_devices {
+  display: inline-block;
+  width: 10em;
+}
+
+#parameters_select_start_date, #parameters_select_end_date {
+  display: inline-block;
+  width: 10.3em;
+}
+
+#container_user_data {
+  display: inline-block;
+  vertical-align: top;    /*ganz oben platzieren*/
+  width: 35.92%;
+  border: 2px solid #707884;
+  margin-left: -0.2em;
+  height: 4.5em;
+}
+
+#user_data_container {
+  padding-top: 0.35em;
+  padding-bottom: 0.10em;
+}
+
+#user_logged_in_information {
+  display: inline-block;
+  margin-left: 0.3em;
+  margin-top: 0.3em;
+}
+
+#logout_button {
+  float: right;
+  margin-right: 0.3em;
+}
+
+#container_device_and_status {
+  display: inline-block;
+  vertical-align: top;    /*ganz oben platzieren*/
+  min-height: 37.54em;
+  border: 2px solid #707884;
+}
+
+#devices, #status {
+    width: 30em;
+    margin-bottom: -0.90em; /*Lücke zwischen inline-block Elementen schließen*/
+}
+
+#status {
+  height: 23.75em;
+}
+
+#devices_table tbody {
+  max-height: 15em;
+}
+
+#status_table tbody {
+  max-height: 22em;
+}
+
+#devices_header, #status_header, #map_header, #berichte_header, #ereignis_header, #popup_konfigurieren_header, #parameters_header, #user_data_header {
+  color: white;
+  background-color: #707884;
+  padding-left: 0.4em;
+  height: 1.3em;
+}
+
+#devices_table tr:not(:first-child):hover, #bericht_table tbody tr:hover {
+  background-color: #9caabf;
+}
+
+#devices_table th, #devices_table td {
+  padding: 5px; /*Zeilenhöhe verkleinern, dass mehr Zeilen sichtbar sind, ohne zuviel scrollen zu müssen*/
+}
+
+#status_table_container {
+  height: 94.55%;
+}
+
+#status_table {
+  height: 22.5em;
+}
+
+#devices_table th, #devices_table td, #status_table th, #status_table td, #bericht_table_header_fake th, #bericht_table th, #bericht_table td {
+  padding: 0px; /*Zeilenhöhe verkleinern, dass mehr Zeilen sichtbar sind, ohne zuviel scrollen zu müssen*/
+}
+
+th, td {
+  overflow: hidden;
+  text-align:center;
+  white-space: nowrap;  /*Zeilenumbruch in Table-Zellen verhindern*/
+}
+/*https://codepen.io/yavuzselim/pen/LNYrBd*/
+#devices_table td, #status_table td {
+  width: 100%;   /*TODO ohne definierte width füllen die Zellen nicht den gesamten table aus (wegen display: block von #status_table thead, tbody  -> weiter unten)*/
+}
+
+#devices_table tbody {
+  min-height: 12em;
+}
+
+#devices_table tbody, #status_table tbody{
+    /* height:18.1em;    /*max-height?*/ */
+    overflow-x:auto;
+    overflow-y:auto;
+    width: 100%;
+}
+#devices_table thead, #devices_table tbody {
+  display:block;
+}
+
+#status_table thead, #status_table tbody {
+  display: none;
+}
+/******************************************/
+
+/**/
+#map {
+  display: inline-block;
+  width: 70em;
+  height: 36em;
+  margin-left: -0.2em;
+}
+
+#map_container {
+  width: 70em;
+  border: 2px solid #707884;
+  /* max-height: 10em; */
+}
+
+.last_position {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 40px solid red;
+  /* background-color: orange; */
+  opacity: 0.5;
+}
+
+.positions_overlay {
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #005FFF;
+  /* opacity: 0.8; */
+  /* display: none; */
+}
+
+#ereignis {
+  display: inline-block;
+  vertical-align: top;    /*ganz oben platzieren*/
+  width: 15.57%;
+  border: 2px solid #707884;
+  min-height: 37.55em;
+  margin-left: -0.2em;
+}
+
+/**/
+/*http://jsfiddle.net/CrSpu/16621/*/
+
+#berichte {
+  margin-top: -0.12em;
+}
+
+#bericht_table_container {
+  overflow:hidden;
+  overflow-y: scroll;
+  height: 14.4em;
+}
+
+#bericht_table {
+  display: none;
+  /* table-layout: fixed; */
+  /* this keeps your columns with fixed with exactly the right width */
+  /* width: 100%; */
+  /* table must have width set for fixed layout to work as expected */
+  /* height: 100%; */
+}
+
+#bericht_table_header_fake {
+  /* display: none; */
+  table-layout: fixed;
+  /* this keeps your columns with fixed with exactly the right width */
+  width: 99%;
+  /* table must have width set for fixed layout to work as expected */
+  /* height: 100%; */
+  margin-bottom: 0;
+}
+
+#bericht_table td {
+  /* min-width: 12.4%;
+  max-width: 12.4%; */
+  width: 209.217px;
+}
+
+#bericht_table_header_fake th {
+  /* width: 15%; */
+}
+/**/
+
+#bericht_menu {
+
+}
+
+/* #bericht_select_type {
+  width: 10em;
+  position: relative;
+  top: 0.24em;
+} */
+
+/* #bericht_select_type, #bericht_konfigurieren_konfigurieren-button, #bericht_konfigurieren_anzeigen-button {
+  display: inline-block;
+} */
+
+#bericht_konfigurieren_anzeigen-button {
+  margin-top: -0.36em;
+}
+
+#form_data {
+  display: none;
+}
