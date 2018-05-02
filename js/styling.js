@@ -85,7 +85,7 @@ var styling = {
     $('#status_longitude').text(p[p.length-1].longitude +'\u00B0');
     $('#status_valid').text(format.bool(p[p.length-1].valid));
     $('#status_accuracy').text(format.distance(p[p.length-1].accuracy));
-    $('#status_altitude').text(p[p.length-1].altitude+' Meter');
+    $('#status_altitude').text(p[p.length-1].altitude + " Meter");
     $('#status_speed').text(format.speed(p[p.length-1].speed));
     $('#status_course').text(format.course(p[p.length-1].course));
     $('#status_address').text(p[p.length-1].address);
