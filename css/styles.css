@@ -1,9 +1,11 @@
 body {
-  background: radial-gradient(circle, #97BE0D, white);
+  background: rgba(196, 216, 53, 0.7);
 }
 
 h6 {
-  font-weight: bold;
+  font-size: 18.60px;
+  font-weight: 100;
+  text-transform: uppercase;
 }
 
 input {
@@ -27,7 +29,6 @@ input {
   display: inline-block;
   padding: 10px;
   width: 100%;
-  text-align: center;
 }
 
 #parameters_select_groups, #parameters_select_devices {
@@ -59,6 +60,7 @@ input {
 #container_user_data {
   margin: 0px;
   padding: 0px;
+  float: right;
 }
 
 #user_data_container{
@@ -74,12 +76,8 @@ input {
 #logout_button {
   float: right;
   margin-right: 0.3em;
-
   height: 30px;
   font-size: 14px;
-  /* color: black;
-  background-color: #d2d6dd;
-  border-color: #9da3ad; */
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -93,110 +91,67 @@ input {
   font-size: 14px;
 }
 
+#container_statusbar_and_map{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 #container_device_and_status {
-  display: inline-block;
-  vertical-align: top;    /*ganz oben platzieren*/
-  min-height: 37.54em;
-  border: 2px solid #707884;
+  /* border: 2px solid #707884; */
+  padding-left: 0px;
+  padding-right: 0px;
+  float: left;
 }
 
-#devices, #status {
-    width: 22em;
-    /* width: 28em; */
-    margin-bottom: -0.90em; /*Lücke zwischen inline-block Elementen schließen*/
+#status_header{
+  height: 50px;
 }
 
-/* #devices {
-  height: 14em;
-} */
-
-#status {
-  /* height: 23.75em; */
-  height: 37.85em;
+#status_header div{
+  float: left;
 }
-
-/* #devices_table tbody {
-  max-height: 15em;
-} */
 
 #status_table tbody {
-  /* max-height: 22em; */
   max-height: 34em;
 }
-
-/* #devices_table .device_name {
-  min-width: 150px;
-  max-width: 150px;
-}
-
-#devices_table .device_status {
-  min-width: 150px;
-  max-width: 150px;
-}
-
-#devices_table .device_last_update {
-  min-width: 160px;
-  max-width: 160px;
-} */
 
 #status_table .status_parameter {
   min-width: 140px;
   max-width: 140px;
-  /* min-width: 50%;
-  max-width: 50%; */
 }
 
 #status_table .status_wert {
   min-width: 180px;
   max-width: 180px;
-  /* min-width: 50%;
-  max-width: 50%; */
 }
 
 #option_folgen {
-  /* display: none; */
   float: right;
-  font-size: 8px;
-  padding-top: 0;
-  padding-bottom: 0;
 }
 
 #status_header h6 {
-  /* margin-top: 5px; */
   display: inline-block;
 }
-
-/* #status_header {
-  color: white;
-  background-color: #707884;
-  padding-left: 0.4em;
-  height: 2em;
-} */
 
 #devices_header, #status_header, #map_header, #berichte_header, #ereignis_header, #popup_konfigurieren_header, #parameters_header, #user_data_header {
   color: white;
   background-color: #707884;
-  padding-left: 0.4em;
-  height: 1.3em;
+  padding: 10px;
 }
 
-#map_header {
-  width: 101.2%;
+#map{
+  padding-left: 0px;
+  padding-right: 0px;
 }
+
+
 
 #devices_table tr:not(:first-child):hover, #bericht_table tbody tr:hover {
   background-color: #9caabf;
 }
 
-/* #devices_table_container {
-  height: 85%;
-  overflow:hidden;
-  overflow-y: scroll;
-} */
-
 #status_table_container {
   width: 100%;
-  height: 95%;
   overflow:hidden;
   /* overflow-y: scroll; */
 }
@@ -235,18 +190,17 @@ th, td {
 /******************************************/
 #map {
   display: inline-block;
-  /* width: 88.6em; */
-  width: 96.5em;
-  /* width: calc(80vw - 100px); */
-  /* width: 60vw; */
-  height: 37.5em;
-  margin-left: -0.22em;
 }
 
 #map_container {
-  width: 101.2%;  /*über 100%, weil scroll-Bar von bericht_table da Probleme macht*/
-  height: 96.6%;
-  border: 2px solid #707884;
+  /* width: 101.2%; */ /*über 100%, weil scroll-Bar von bericht_table da Probleme macht*/
+  /* height: 96.6%; */
+  /* border: 2px solid #707884; */
+}
+
+#berichte_container{
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .last_position {

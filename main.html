@@ -92,107 +92,95 @@
       </div>        <!-- Ende container_user_data -->
     </div>          <!-- Ende container_parameters_and_user_data -->
 
-    <div id="container_device_and_status" class="container-fluid">
-      <!-- <div id="devices">
-        <div id="devices_header">
-          <h6>Geräte</h6>
-        </div>
-        <div id="devices_table_container">
-          <table id="devices_table" class="table table-bordered table-striped">
-            <thead class="thead-light">
-              <tr>
-                <th class="device_name">Name</th>
-                <th class="device_status">Status</th>
-                <th class="device_last_update">Letzte Aktualisierung</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
-        </div>
-      </div> -->
-
-      <div id="status">
-        <div id="status_header">
-          <h6>Status</h6>
-          <input type="button" id="option_folgen" value="Folgen">
-        </div>    <!-- Ende status_header -->
-        <div id="status_table_container">
-          <table id="status_table" class="table table-bordered table-striped">
-            <thead class="thead-light">
-              <tr>
-                <th class="status_parameter">Parameter</th>
-                <th class="status_wert">Wert</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="status_parameter">Zeit</td>
-                <td id="status_fixtime" class="status_wert"></td>
-              </tr>
-              <tr>
-                <td>Breitengrad</td>
-                <td id="status_latitude"></td>
-              </tr>
-              <tr>
-                <td>Längengrad</td>
-                <td id="status_longitude"></td>
-              </tr>
-              <tr>
-                <td>Gültig</td>
-                <td id="status_valid"></td>
-              </tr>
-              <tr>
-                <td>Genauigkeit</td>
-                <td id="status_accuracy"></td>
-              </tr>
-              <tr>
-                <td>Höhe</td>
-                <td id="status_altitude"></td>
-              </tr>
-              <tr>
-                <td>Geschwindigkeit</td>
-                <td id="status_speed"></td>
-              </tr>
-              <tr>
-                <td>Richtung</td>
-                <td id="status_course"></td>
-              </tr>
-              <tr>
-                <td>Adresse</td>
-                <td id="status_address"></td>
-              </tr>
-              <tr>
-                <td>Protokoll</td>
-                <td id="status_protocol"></td>
-              </tr>
-              <tr>
-                <td>Batteriestand</td>
-                <td id="status_batterylevel"></td>
-              </tr>
-              <tr>
-                <td>Distanz</td>
-                <td id="status_distance"></td>
-              </tr>
-              <tr>
-                <td>Kilometerzähler</td>
-                <td id="status_totalDistance"></td>
-              </tr>
-              <tr>
-                <td>Bewegung</td>
-                <td id="status_motion"></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>    <!-- Ende status_table_container -->
-      </div>      <!-- Ende status -->
-    </div>        <!-- Ende container_device_and_status -->
-<!--Map----------------------------------------------------------------------------------------------------------------------------------->
-    <div id="map">
-      <div id="map_header">
-        <h6>Karte</h6>
-      </div>      <!-- Ende map_header -->
-      <div id="map_container"></div>        <!-- Ende map_container -->
-    </div>        <!-- Ende map -->
+    <div id="container_statusbar_and_map" class="container-fluid">
+      <div id="container_device_and_status" class="col-md-3">
+        <div id="status">
+          <div id="status_header">
+            <div id="status_header_h6" class="col-md-9">
+              <h6>Status</h6>
+            </div>
+            <div id="status_header-button" class="col-md-3">
+              <input type="button" id="option_folgen" class="btn btn-primary" value="Folgen">
+            </div>
+          </div>    <!-- Ende status_header -->
+          <div id="status_table_container">
+            <table id="status_table" class="table table-bordered table-striped">
+              <thead class="thead-light">
+                <tr>
+                  <th class="status_parameter">Parameter</th>
+                  <th class="status_wert">Wert</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="status_parameter">Zeit</td>
+                  <td id="status_fixtime" class="status_wert"></td>
+                </tr>
+                <tr>
+                  <td>Breitengrad</td>
+                  <td id="status_latitude"></td>
+                </tr>
+                <tr>
+                  <td>Längengrad</td>
+                  <td id="status_longitude"></td>
+                </tr>
+                <tr>
+                  <td>Gültig</td>
+                  <td id="status_valid"></td>
+                </tr>
+                <tr>
+                  <td>Genauigkeit</td>
+                  <td id="status_accuracy"></td>
+                </tr>
+                <tr>
+                  <td>Höhe</td>
+                  <td id="status_altitude"></td>
+                </tr>
+                <tr>
+                  <td>Geschwindigkeit</td>
+                  <td id="status_speed"></td>
+                </tr>
+                <tr>
+                  <td>Richtung</td>
+                  <td id="status_course"></td>
+                </tr>
+                <tr>
+                  <td>Adresse</td>
+                  <td id="status_address"></td>
+                </tr>
+                <tr>
+                  <td>Protokoll</td>
+                  <td id="status_protocol"></td>
+                </tr>
+                <tr>
+                  <td>Batteriestand</td>
+                  <td id="status_batterylevel"></td>
+                </tr>
+                <tr>
+                  <td>Distanz</td>
+                  <td id="status_distance"></td>
+                </tr>
+                <tr>
+                  <td>Kilometerzähler</td>
+                  <td id="status_totalDistance"></td>
+                </tr>
+                <tr>
+                  <td>Bewegung</td>
+                  <td id="status_motion"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>    <!-- Ende status_table_container -->
+        </div>      <!-- Ende status -->
+      </div>        <!-- Ende container_device_and_status -->
+  <!--Map----------------------------------------------------------------------------------------------------------------------------------->
+      <div id="map" class="col-md-9">
+        <div id="map_header">
+          <h6>Karte</h6>
+        </div>      <!-- Ende map_header -->
+        <div id="map_container"></div>        <!-- Ende map_container -->
+      </div>        <!-- Ende map -->
+    </div>
 <!------------------------------------>
     <!-- <div id="ereignis">
       <div id="ereignis_header">
@@ -200,6 +188,7 @@
       </div>
     </div> -->
 <!------------------------------------>
+  <div id="berichte_container" class="container-fluid">
     <div id="berichte">
       <div id="berichte_header">
         <h6>Berichte</h6>
@@ -229,7 +218,9 @@
           </table>
         </div>    <!-- Ende bericht_table_container -->
       </div>      <!-- Ende bericht_menu -->
-    </div>        <!-- Ende berichte -->
+    </div>
+  </div>
+<!-- Ende berichte -->
 <!--Popup-Menues-------------------------------------------------------------------------------------------------------------------------->
     <div id="form_data">
       <input id="form_device_value" type="text">
