@@ -19,13 +19,13 @@ input {
 }
 
 #container_parameters {
-  display: inline-block;
+  /* display: inline-block; */
   margin: 0px;
   padding:0px;
 }
 
 #parameters_container {
-  display: inline-block;
+  /* display: inline-block; */
   padding: 10px;
   width: 100%;
 }
@@ -41,7 +41,7 @@ input {
 }
 
 #parameters_select_groups, #parameters_select_devices {
-  display: inline-block;
+  /* display: inline-block; */
   width: 130px;
   height: 30px;
   font-size: 14px;
@@ -50,7 +50,7 @@ input {
 }
 
 #parameters_select_start_date, #parameters_select_end_date {
-  display: inline-block;
+  /* display: inline-block; */
   width: 130px;
   height: 30px;
   font-size: 14px;
@@ -58,7 +58,7 @@ input {
 }
 
 #parameters_select_default_time_frames {
-  display: inline-block;
+  /* display: inline-block; */
   width: 150px;
   height: 30px;
   font-size: 14px;
@@ -77,7 +77,7 @@ input {
 }
 
 #user_logged_in_information {
-  display: inline-block;
+  /* display: inline-block; */
   margin-left: 0.3em;
   margin-top: 0.3em;
 }
@@ -139,7 +139,7 @@ input {
 }
 
 #status_header h6 {
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 #devices_header, #status_header, #map_header, #berichte_header, #ereignis_header, #popup_konfigurieren_header, #parameters_header, #user_data_header {
@@ -198,7 +198,7 @@ th, td {
 }
 /******************************************/
 #map {
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 #map_container {
@@ -233,7 +233,7 @@ th, td {
 
   /* border: solid white;
   border-width: 0 1.5px 1.5px 0;
-  display: inline-block;
+  /* display: inline-block; */
   padding: 2.5px;
 
   transform: rotate(-135deg);
@@ -251,7 +251,7 @@ th, td {
 }
 
 /* #ereignis {
-  display: inline-block;
+  /* display: inline-block; */
   vertical-align: top;
   width: 15.57%;
   border: 2px solid #707884;
