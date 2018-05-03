@@ -24,7 +24,7 @@ var map_obj = {
     var devices = rest.get_devices();
     // console.log(devices);
     // console.log(devices[devices.length-1].id);
-    console.log( performance.now() );
+    // console.log( performance.now() );
     //TODO device rauskriegen, dessen letzter Punkt am kürzesten zurückliegt, und die Koordinaten dieses Punktes zentrieren
     for(var i=0; i<devices.length; i++){
        $.ajax({
@@ -52,7 +52,7 @@ var map_obj = {
          }
        });
     }
-    console.log( performance.now() );
+    // console.log( performance.now() );
     return map;
   },
 
@@ -148,7 +148,7 @@ var map_obj = {
 
           //Berichts-Tabelle mit Inhalt füllen
           $('#bericht_table tbody').append('<tr id="'+p[i].id+'" class="bericht_table_rows"><td>'+devices[0].name+'</td><td>'+formatBool(p[i].valid)+'</td><td>'+date.iso8601_to_germanDate(p[i].fixTime)+'</td><td>'+p[i].latitude+'\u00B0</td><td>'+p[i].longitude+'\u00B0</td><td>'+p[i].altitude+' m</td> <td>'+p[i].course+'</td> <td>'+formatSpeed(p[i].speed)+'</td><td>'+p[i].address+'</td></tr>');
-          console.log("bla: "+p[i].id);
+          // console.log("bla: "+p[i].id);
           scroll_to_table_row_and_select_it(p[i].id);
         }
         map_obj.CenterMap(map, p[p.length-1].longitude, p[p.length-1].latitude);
@@ -164,7 +164,7 @@ var map_obj = {
     iso8601_formatted_end_date = date.iso8601_formattedDate( date.create_current_date() );
     for(var i=0; i<devices.length; i++) {
       var positions = rest.get_positions(devices[i].id, iso8601_formatted_start_date, iso8601_formatted_end_date);
-      console.log("start: "+iso8601_formatted_start_date+"  ---  ende: "+iso8601_formatted_end_date);
+      // console.log("start: "+iso8601_formatted_start_date+"  ---  ende: "+iso8601_formatted_end_date);
       var p = positions;
 
       if(p.length>0) {

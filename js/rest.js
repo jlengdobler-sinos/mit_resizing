@@ -4,9 +4,8 @@ var rest = {
     $.ajax({
       type: 'GET',
       url: 'http://demo5.traccar.org/api/groups',
-      async: true,   //TODO deprecated
+      async: true,
       headers: {
-          // "Authorization": "Basic " + btoa("skipto@t-online.de:test")
           "Authorization": "Basic " + btoa( sessionStorage.getItem("Username")+":"+sessionStorage.getItem("Password") )
       },
       success: function (groups) {

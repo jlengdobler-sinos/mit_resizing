@@ -99,7 +99,7 @@ var styling = {
   show_tooltip_on_click_on_position_overlay: function(deviceId, position_id) {
     var positions = rest.get_positions(deviceId, position_id);
     var p = positions;
-    console.log(p);
+    // console.log(p);
   },
   /**/
   show_status_table_with_latest_position: function(positions_array) {

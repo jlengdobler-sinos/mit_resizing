@@ -20,7 +20,6 @@ input {
 
 #container_parameters {
   display: inline-block;
-  width: 75%;
   margin: 0px;
   padding:0px;
 }
@@ -29,6 +28,16 @@ input {
   display: inline-block;
   padding: 10px;
   width: 100%;
+}
+
+#parameters_container .col-md-2{
+  float: left;
+}
+
+#parameters_container .col-xs-12 select,
+#parameters_container .col-xs-12 input,
+#parameters_container .col-xs-12 button{
+  float: right;
 }
 
 #parameters_select_groups, #parameters_select_devices {

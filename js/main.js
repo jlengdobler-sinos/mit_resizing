@@ -259,7 +259,7 @@ $( document ).ready(function() {
       var d3 = document.createElement('span');
       // d3.textContent = "test";
       $(d3).addClass('tooltiptext');
-      console.log(deviceId);
+      // console.log(deviceId);
       // console.log(p[i].id);
 
       //TODO für jeden Punkt einen Tooltip generieren, der wie auf dem alten Sinos-Portal die wichtigsten Informationen anzeigt. Später dann aber nur nach Klick auf den Punkt und nicht bei Hover
@@ -300,7 +300,7 @@ $( document ).ready(function() {
       $('#bericht_table tbody').append('<tr id="'+p[i].id+'" class="bericht_table_rows"><td>'+devices[0].name+'</td><td>'+format.bool(p[i].valid)+'</td><td>'+date.iso8601_to_germanDate(p[i].fixTime)+'</td><td>'+p[i].latitude+'\u00B0</td><td>'+p[i].longitude+'\u00B0</td><td>'+p[i].altitude+' m</td> <td>'+p[i].course+'</td> <td>'+format.speed(p[i].speed)+'</td><td>'+p[i].address+'</td></tr>');
     }
 
-    console.log(points);
+    // console.log(points);
 
     //anzeigen von Berichts-Tabelle, nachdem Bericht erstellt wurde
     $('#bericht_table_header_fake').css("display", "table");

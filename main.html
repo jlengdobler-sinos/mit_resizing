@@ -45,35 +45,45 @@
         <div id="parameters_header">
           <h6>Parameter</h6>
         </div>    <!-- Ende parameters_header -->
-        <div id="parameters_container">
+        <div id="parameters_container" class="container-fluid">
+          <div class="col-xs-12 col-md-2">
+            <label for="parameters_select_groups">Gruppen:</label>
+            <select id="parameters_select_groups" class="form-control">
+              <option selected>Alle</option>
+            </select>
+          </div>
+          <div class="col-xs-12 col-md-2">
+            <label for="parameters_select_devices">Fahrzeug:</label>
+            <select id="parameters_select_devices" class="form-control">
+              <option selected>Alle</option>
+            </select>
+          </div>
 
-          <label for="parameters_select_groups">Gruppen:</label>
-          <select id="parameters_select_groups" class="form-control">
-            <option selected>Alle</option>
-          </select>
+          <div class="col-xs-12 col-md-2">
+            <label for="parameters_select_start_date">Von:</label>
+            <input id="parameters_select_start_date" type="text" class="form-control">
+          </div>
 
-          <label for="parameters_select_devices">Fahrzeug:</label>
-          <select id="parameters_select_devices" class="form-control">
-            <option selected>Alle</option>
-          </select>
+          <div class="col-xs-12 col-md-2">
+            <label for="parameters_select_end_date">Bis:</label>
+            <input id="parameters_select_end_date" type="text" class="form-control">
+          </div>
 
-          <label for="parameters_select_start_date">Von:</label>
-          <input id="parameters_select_start_date" type="text" class="form-control">
+          <div class="col-xs-12 col-md-2">
+            <select disabled id="parameters_select_default_time_frames" class="form-control" autocomplete="off">    <!-- autocomplete-Attribut gesetzt, dass bei Reload der Seite die selected-Option zurückgesetzt wird -> betrifft scheinbar nur Firefox -->
+              <option value="letzte_stunde" selected>letzte Stunde</option>
+              <option value="heute">heute</option>
+              <option value="gestern">gestern</option>
+              <option value="diese_woche">diese Woche</option>
+              <option value="letzte_woche">letzte Woche</option>
+              <option value="dieser_monat">dieser Monat</option>
+              <option value="letzter_monat">letzter Monat</option>
+            </select>
+          </div>
 
-          <label for="parameters_select_end_date">Bis:</label>
-          <input id="parameters_select_end_date" type="text" class="form-control">
-
-          <select disabled id="parameters_select_default_time_frames" class="form-control" autocomplete="off">    <!-- autocomplete-Attribut gesetzt, dass bei Reload der Seite die selected-Option zurückgesetzt wird -> betrifft scheinbar nur Firefox -->
-            <option value="letzte_stunde" selected>letzte Stunde</option>
-            <option value="heute">heute</option>
-            <option value="gestern">gestern</option>
-            <option value="diese_woche">diese Woche</option>
-            <option value="letzte_woche">letzte Woche</option>
-            <option value="dieser_monat">dieser Monat</option>
-            <option value="letzter_monat">letzter Monat</option>
-          </select>
-
-          <button id="bericht_konfigurieren_anzeigen-button" class="btn btn-primary" type="button">Anzeigen</button>
+          <div class="col-xs-12 col-md-2">
+            <button id="bericht_konfigurieren_anzeigen-button" class="btn btn-primary" type="button">Anzeigen</button>
+          </div>
 
         </div>    <!-- Ende parameters_container -->
       </div>        <!-- Ende container_parameters -->
